@@ -20,11 +20,11 @@ record.onresult = function(evt){
 
   var command = evt["results"][0][0]["transcript"];
 
-  if(command.includes("rain")){
+  if(command.includes("drop")){
     elBody.classList.add("rain");
   }
 
-  if(command.includes("snow")){
+  if(command.includes("sno")){
     elBody.classList.add("winter");
   }
 
