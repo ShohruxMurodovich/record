@@ -92,3 +92,25 @@
   background-repeat: no-repeat;
   background-size: 100% 120%;
 }
+
+.error{
+  background-color: red;
+}
+
+
+.title{
+display: none;
+position: absolute;
+top: 40%;
+left: 43%;
+z-index: 1;
+}
+
+.error .title{
+  display: block;
+  color: white;
+}
+
+.error .btn-rec{
+  display: none;
+}

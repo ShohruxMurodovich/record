@@ -13,17 +13,18 @@ record.onend = function(){
 
 record.onerror = function(){
   console.log("===== Xatolik yuz berdi =====");
+  elBody.classList.add("error");
 }
 
 record.onresult = function(evt){
 
   var command = evt["results"][0][0]["transcript"];
 
-  if(command.includes("spring")){
+  if(command.includes("rain")){
     elBody.classList.add("rain");
   }
 
-  if(command.includes("winter")){
+  if(command.includes("snow")){
     elBody.classList.add("winter");
   }
 
@@ -31,15 +32,15 @@ record.onresult = function(evt){
     elBody.classList.add("infinity");
   }
 
-  if(command.includes("close")){
+  if(command.includes("cl")){
     window.close() ;
   }
 
   if(command.includes("teleport")){
     elBody.classList.add("teleport");
     setTimeout(function(){
-      window.location.href = 'https://www.google.com/';
-    }, 1 * 1000);
+      window.location.href = 'https://github.com/ShohruxMurodovich/record';
+    }, 1 * 500);
   }
 
 }
