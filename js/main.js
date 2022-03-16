@@ -32,7 +32,7 @@ record.onresult = function(evt){
     elBody.classList.add("infinity");
   }
 
-  if(command.includes("cl")){
+  if(command.includes("close")){
     window.close() ;
   }
 
